@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head><style><style>
+<script>
+<script>
+let balance = 0;
+
+function increaseBalance(){
+balance += Math.floor(Math.random()*10);
+document.getElementById("balance").innerHTML =
+"$" + balance + ".00";
+
+let notif = document.createElement("p");
+notif.innerHTML = "Profit update: Balance increased to $" + balance + ".00";
+document.getElementById("notifications").prepend(notif);
+}
+setInterval(increaseBalance,5000);
+</script>
+function changePrices(){
+document.getElementById("btc").innerHTML =
+"BTC/USD: $" + (63000 + Math.floor(Math.random()*1000));
+document.getElementById("eth").innerHTML =
+"ETH/USD: $" + (3400 + Math.floor(Math.random()*100));
+document.getElementById("eur").innerHTML =
+"EUR/USD: " + (1.08 + (Math.random()/100)).toFixed(4);
+}
+setInterval(changePrices,3000);
+</script>
+body{
+margin:0;
+font-family:Arial;
+background:#0b132b;
+color:white;
+}
+
+.sidebar{
+position:fixed;
+width:200px;
+height:100%;
+background:#1c2541;
+padding-top:20px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+padding:15px;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#3a506b;
+}
+
+.main{
+margin-left:210px;
+padding:20px;
+}
+
+.card, .market, .notifications{
+background:#1c2541;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+}
+
+.cards{
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+}
+
+button{
+background:#00c896;
+color:white;
+border:none;
+padding:12px 20px;
+margin:10px;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#02a77f;
+}
+
+.notifications p{
+margin:5px 0;
+padding:5px;
+background:#3a506b;
+border-radius:5px;
+}
+
+</style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0b132b;
+color:white;
+}
+
+.sidebar{
+position:fixed;
+width:200px;
+height:100%;
+background:#1c2541;
+padding-top:20px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+padding:15px;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#3a506b;
+}
+
+.main{
+margin-left:210px;
+padding:20px;
+}
+
+.card{
+background:#1c2541;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+}
+
+</style>
+<title>Dashboard</title>
+
+<style>
+body
+animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+body{
+font-family:Arial;
+background:#0b132b;
+color:white;
+text-align:center;
+}
+
+.box{
+background:#1c2541;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+</style>
+
+</head>
+<style>
+body{
+font-family:Arial;
+background:#0b132b;
+color:white;
+text-align:center;
+}
+
+.card{
+background:#1c2541;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+</style>
+<body>
+<body>
+
+<div class="sidebar"><div <div class="chart" style="background:#3a506b;height:200px;border-radius:10px;margin-top:10px;">
+<p style="padding-top:80px;">[Trading Chart Placeholder]</p>
+</div>class="main">
+
+<h1>Trading Dashboard</h1>
+
+<div class="market">
+<h2>Live Market</h2>
+<p id="btc">BTC/USD: $63,200 ▲</p>
+<p id="eth">ETH/USD: $3,400 ▲</p>
+<p id="eur">EUR/USD: 1.08 ▼</p>
+</div>
+
+<div class="cards">
+<div class="card">
+<h3>Account Balance</h3>
+<h2 id="balance">$0.00</h2>
+</div>
+
+<div class="card">
+<h3>Active Investment</h3>
+<p>No active trade</p>
+</div>
+</div>
+
+<div class="notifications" id="notifications">
+<!-- notifications appear here -->
+</div>
+
+</div>
+<h2>Broker</h2>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="deposit.html">Deposit</a>
+<a href="withdraw.html">Withdraw</a>
+<a href="history.html">History</a>
+<a href="index.html">Logout</a>
+</div>
+
+<div class="main">
+<h1>Dashboard</h1>
+
+<div class="card">
+<h3>Account Balance</h3>
+<h2 id="balance">$0.00</h2>
+</div>
+
+<div class="card">
+<h3>Active Investment</h3>
+<p>No active trade</p>
+</div>
+
+</div>
+
+</body>
+<h1>Dashboard</h1>
+
+<div class="card">
+<h2>Account Balance</h2>
+<h3>$0.00</h3>
+</div>
+
+<div class="card">
+<h2>Total Profit</h2>
+<h3>$0.00</h3>
+</div>
+
+<div class="card">
+<button>Deposit</button>
+<button>Withdraw</button>
+<button>Invest Now</button>button:active{
+transform:scale(0.95);
+}
+</div>
+button:hover{
+background:#02a77f;
+}
+<script>
+
+let balance = 0;
+
+function increaseBalance(){
+balance += <h3 id="balance">$0.00</h3>Math.floor(Math.random()*5);
+document.getElementById("balance").innerHTML =
+"$" + balance + ".00";
+}
+
+setInterval(increaseBalance,4000);
+
+</script><script>
+setTimeout(function(){
+document.getElementById("loading").style.display="none";
+},2000);
+</script>
+</body>
+<div id="loading">Loading Market...</div>
+<h1>User Dashboard</h1>
+
+<div class="box">
+<h2>Account Balance</h2>
+<p>$0.00</p>
+</div>
+
+<div class="box">
+<h2>Active Investment</h2>
+<p>No active plan</p>
+</div>
+
+<div class="box">
+<button>Deposit</button>
+<button>Withdraw</button>
+</div>
+
+</body>
+</html>
